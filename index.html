@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Judy.AI | Empowering Indian Legal Intelligence</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700;6..72,800&amp;family=Manrope:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#241a00",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-container": "#cba72f",
+              "tertiary": "#735c00",
+              "on-primary-fixed": "#071b3b",
+              "on-tertiary-fixed-variant": "#574500",
+              "outline": "#75777f",
+              "surface-dim": "#d9dadb",
+              "primary-fixed": "#d8e2ff",
+              "on-primary": "#ffffff",
+              "on-surface-variant": "#44474e",
+              "on-background": "#191c1d",
+              "secondary": "#545f72",
+              "surface-variant": "#e1e3e4",
+              "surface-container": "#edeeef",
+              "inverse-primary": "#b6c6f0",
+              "primary-fixed-dim": "#b6c6f0",
+              "on-secondary-fixed-variant": "#3c475a",
+              "inverse-on-surface": "#f0f1f2",
+              "surface-container-low": "#f3f4f5",
+              "primary-container": "#1a2b4c",
+              "on-secondary-container": "#586377",
+              "inverse-surface": "#2e3132",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#bcc7dd",
+              "surface-container-highest": "#e1e3e4",
+              "on-tertiary-container": "#4e3d00",
+              "on-primary-fixed-variant": "#364669",
+              "surface-bright": "#f8f9fa",
+              "outline-variant": "#c5c6cf",
+              "on-surface": "#191c1d",
+              "surface-tint": "#4e5e82",
+              "error": "#ba1a1a",
+              "on-secondary-fixed": "#111c2c",
+              "on-primary-container": "#8293ba",
+              "secondary-fixed": "#d8e3fa",
+              "background": "#f8f9fa",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#e7e8e9",
+              "surface": "#f8f9fa",
+              "on-tertiary": "#ffffff",
+              "primary": "#031636",
+              "on-error-container": "#93000a",
+              "tertiary-fixed-dim": "#e9c349",
+              "error-container": "#ffdad6",
+              "tertiary-fixed": "#ffe088"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-ai {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .premium-cta {
+            background: linear-gradient(135deg, #031636 0%, #0a234d 100%);
+        }
+        .hero-pattern {
+            background-color: #f8f9fa;
+            background-image: radial-gradient(#d1d5db 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-outline-variant/30 transition-all duration-300">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+<div><img src="./assets/logo.png" alt="Judy.AI" class="h-14 w-auto"/></div>
+<nav class="flex items-center">
+<button onclick="document.getElementById('hero-form').scrollIntoView({behavior:'smooth'})" class="bg-primary text-on-primary px-7 py-2.5 rounded-full font-bold premium-cta hover:shadow-lg hover:scale-[1.02] transition-all text-sm">Get Early Access</button>
+</nav>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative px-6 pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden hero-pattern">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="z-10 animate-in fade-in slide-in-from-left duration-1000">
+<span class="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/5 text-primary text-[10px] font-label font-bold mb-8 tracking-[0.2em] uppercase border border-primary/10">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary mr-2 animate-pulse"></span>
+                    Future of Indian Jurisprudence
+                </span>
+<h1 class="font-headline text-5xl md:text-[5.5rem] font-black text-primary leading-[1.05] mb-8 tracking-tighter">
+                    Empowering the Indian Legal Journey with AI.
+                </h1>
+<p class="text-lg md:text-xl text-secondary leading-relaxed mb-10 max-w-xl font-medium opacity-90">
+                    A sophisticated digital concierge for citizens seeking justice, students mastering the law, and practitioners demanding efficiency. Available in English and 12 Indian regional languages.
+                </p>
+<div id="hero-form" class="flex flex-col sm:flex-row gap-4 max-w-lg">
+<div class="flex-grow relative">
+<input id="hero-email" class="w-full px-6 py-4.5 rounded-2xl border border-outline-variant bg-white focus:ring-4 focus:ring-tertiary/20 focus:border-tertiary transition-all text-on-surface shadow-sm" placeholder="Enter your email address" type="email"/>
+</div>
+<button onclick="submitHero()" class="premium-cta text-on-primary px-10 py-4.5 rounded-2xl font-bold shadow-xl shadow-primary/20 hover:shadow-2xl hover:scale-[1.02] active:scale-95 transition-all whitespace-nowrap">Get Early Access</button>
+</div>
+<div id="hero-success" class="hidden max-w-lg bg-white rounded-2xl px-6 py-5 border border-outline-variant/30 shadow-sm">
+<p class="font-headline font-bold text-primary text-lg">🎉 You're on the waitlist!</p>
+<p class="text-secondary text-sm mt-1 font-medium">We'll notify you first when Judy launches.</p>
+</div>
+<p class="mt-5 text-xs text-outline font-label flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-tertiary">group</span>
+                    Join 2,500+ legal pioneers already on the list.
+                </p>
+</div>
+<div class="relative animate-in fade-in slide-in-from-right duration-1000">
+<div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-[0_32px_64px_-16px_rgba(3,22,54,0.3)] relative group border-4 border-white">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="modern professional law library with warm sunlight streaming through tall windows and digital holographic displays overlaying classical law books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuFjMo19mWu83a2YHtlXDhZ-cweeg4dViUS8gZ-Xk7gqtEYoZCqPLX33iOfhzMpUh63Vg_j-7zwNUriTHtQqOAbYYrj6TiYUf9f5IVhaj0NptBXzZ-IcFlvDmKedAOF6B4-RQYPMKlULG6z4t8po0B_X-LdUhu-Gy2wlhVU3nYUbsTKjWvD-OiR0ItIhJaMwGHtVYRpjKLktnC-v62Dz3N4AS9DkkeYesQQ0st6hW-SBhhHUT5867v1tc3JfVlFculzB8IF2Uy3Cye"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<!-- Floating Glass Element -->
+<div class="absolute bottom-8 left-8 right-8 glass-ai p-8 rounded-3xl border border-white/40 shadow-2xl backdrop-blur-2xl">
+<div class="flex items-start gap-5">
+<div class="bg-primary p-3 rounded-2xl text-on-primary shadow-lg">
+<span class="material-symbols-outlined text-2xl" data-weight="fill">gavel</span>
+</div>
+<div>
+<h4 class="font-headline font-extrabold text-primary text-xl mb-1">Judy Engine</h4>
+<p class="text-sm text-on-surface-variant font-medium">Analyzing 50,000+ Supreme Court precedents in real-time...</p>
+<div class="mt-4 w-full bg-primary/10 h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full w-[70%] rounded-full animate-[progress_3s_ease-in-out_infinite]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="bg-surface-container-low py-32 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20">
+<span class="text-tertiary font-bold tracking-widest text-[10px] uppercase mb-4 block">Core Capabilities</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">Sophisticated Tools for Complex Systems</h2>
+<p class="text-secondary max-w-2xl text-lg font-medium leading-relaxed">We've distilled centuries of Indian legal tradition into a high-performance AI framework designed for the modern era.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+<!-- Feature 1: Multilingual -->
+<div class="md:col-span-4 bg-white p-10 rounded-3xl shadow-sm border border-outline-variant/20 flex flex-col md:flex-row gap-10 items-center hover:shadow-md transition-shadow">
+<div class="flex-1">
+<div class="inline-flex p-3 rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed mb-6">
+<span class="material-symbols-outlined text-3xl">translate_indic</span>
+</div>
+<h3 class="font-headline text-3xl font-extrabold text-primary mb-4">Multi-lingual Legal Support</h3>
+<p class="text-secondary mb-8 text-base leading-relaxed font-medium">Democratizing justice by breaking language barriers. Access legal insights, documents, and advice in Hindi, Bengali, Tamil, Telugu, and more.</p>
+<div class="grid sm:grid-cols-2 gap-4">
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-3 rounded-xl">
+<span class="material-symbols-outlined text-tertiary text-xl">check_circle</span>
+<span class="text-sm font-bold text-on-surface-variant">Real-time Translation</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-3 rounded-xl">
+<span class="material-symbols-outlined text-tertiary text-xl">check_circle</span>
+<span class="text-sm font-bold text-on-surface-variant">Vernacular Summaries</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-2/5 rounded-2xl overflow-hidden aspect-square border border-outline-variant/10 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="vibrant abstract visualization of interconnected nodes representing different Indian scripts and languages glowing with digital light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC837zNg5g3-rDVDEJqUTxF9LBY48R9XsU-9jtjWP9seiCBd5XML3LVVDYAC-wUFGi25_-66u5y7-fR7hnGsK5IMMkucfp4JwMJry9eGB0OANS4diTWXqMJA1B2kvybyGQLwYTYz7IVDf_7X0EVXgzVmU3g0lQ0pLREeLHLMqkmaW1CsKUf7OPG1AWutpnZfrG7z-ynoeK7BU7adq6IW4Za9UKFEeRQaH-7VeWYCHtPe1EkpytXSEW6sndbbMRZ_vxwGOaj7voQHi76"/>
+</div>
+</div>
+<!-- Feature 2: Research -->
+<div class="md:col-span-2 bg-primary p-10 rounded-3xl text-on-primary shadow-2xl flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-white/5 rounded-full blur-3xl group-hover:bg-white/10 transition-colors"></div>
+<div class="relative z-10">
+<div class="bg-white/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl text-tertiary-fixed">search_insights</span>
+</div>
+<h3 class="font-headline text-3xl font-extrabold mb-4 leading-tight">Instant Case Law Research</h3>
+<p class="text-on-primary-container leading-relaxed font-medium text-base opacity-90">Advanced semantic search across SC and High Court judgments since 1950.</p>
+</div>
+<div class="mt-12 pt-8 border-t border-white/10 relative z-10">
+<span class="text-[10px] font-label uppercase tracking-widest opacity-60 font-bold mb-2 block">Accuracy Rate</span>
+<div class="text-5xl font-black text-tertiary-fixed tracking-tighter">99.4%</div>
+</div>
+</div>
+<!-- Bottom Row Features -->
+<div class="md:col-span-2 bg-white p-10 rounded-3xl shadow-sm border border-outline-variant/20 hover:shadow-md transition-all group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 transition-transform group-hover:scale-110">edit_document</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Smart Document Drafting</h3>
+<p class="text-on-surface-variant font-medium leading-relaxed">AI-powered templates for notices, contracts, and petitions, customized for Indian statutory requirements.</p>
+</div>
+<div class="md:col-span-2 bg-white p-10 rounded-3xl shadow-sm border border-outline-variant/20 hover:shadow-md transition-all group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 transition-transform group-hover:scale-110">policy</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Simple Citizens Rights Guide</h3>
+<p class="text-on-surface-variant font-medium leading-relaxed">Plain-language explanations of your fundamental rights and legal procedures. Empowerment through understanding.</p>
+</div>
+<div class="md:col-span-2 bg-white p-10 rounded-3xl shadow-sm border border-outline-variant/20 hover:shadow-md transition-all group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 transition-transform group-hover:scale-110">security</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Secured Intelligence</h3>
+<p class="text-on-surface-variant font-medium leading-relaxed">Bank-grade encryption for all legal queries and document storage. Your privacy is our prime directive.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Audience Section -->
+<section class="py-32 px-6 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<span class="text-tertiary font-bold tracking-widest text-[10px] uppercase mb-4 block">Target Solutions</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">Tailored for the Ecosystem</h2>
+<p class="text-secondary max-w-xl mx-auto text-lg font-medium opacity-80">Designed to serve the diverse needs of India's legal landscape.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-10">
+<!-- Citizens -->
+<div class="group bg-surface-container-low rounded-[2rem] overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] border border-outline-variant/30">
+<div class="h-60 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="diverse group of Indian people in a modern community setting looking hopeful and engaged with digital tablets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjVnMCYg65I9_a8_BvVkI3wfL8NXqnOLPeJVQQkq05YAZIVAYwC591ibzfQ5QMRZjx5dxalYr8oLOj9avEt-KB2L-YhmmQEkIDLYfwUzmKwmJLba55x0M1g8a7wrdvteg-wCu-B0zf3GShNTwSxiYoY8M0mwwqcesp2jMZmhUAoVMrJRWDpC5DJS72PFfix9uQMU46d-jtZl2OyMX0kfTKcwAfRxXAD7t1Vq9sm-6WmJXs4OsuiqBHWc0hcWEtCpqPlFoIrE35w0CF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="p-10">
+<h4 class="font-headline text-2xl font-extrabold text-primary mb-4">For Citizens</h4>
+<p class="text-secondary mb-6 text-sm leading-relaxed font-medium opacity-90">Navigate the complexity of everyday law. Understand your rights, verify documents, and find the right legal path without the confusion.</p>
+<ul class="flex flex-col gap-3 mb-8">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant font-medium"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span>Plain language legal guidance</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant font-medium"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span>Introduce rights awareness</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant font-medium"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span>Guided document access</li>
+</ul>
+<button class="text-primary font-bold flex items-center gap-3 group-hover:gap-5 transition-all text-sm">
+                            Learn more 
+                            <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<!-- Students -->
+<div class="group bg-surface-container-low rounded-[2rem] overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] border border-outline-variant/30">
+<div class="h-60 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="focused young Indian law student in a university library using a sleek laptop surrounded by leather-bound law books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5JocWPH1Z9vrw_1-mlfDhu8_5W_NaqUD6fyZenwdm5g9xqMNaxjNJR9ut-gIrvNLXCYmxlhxfoDR-syA0cIy0FgdLGKhDfKn75W7HWbFx98gI2rONHa4ST_IXi5sJkVwheHZ9zHUdqebr1SOcyuUXZbel3vT5mv4RrU9KWQZtGTi5903rnomlxVeQGpznZ7Fu_Cg001331isGcLcfVDqJybRVP7fJ4-x8aPpRjKKf-p5F5dN81wDa1UzZ4Vm2YqSs-c86y2y1bT4-"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="p-10">
+<h4 class="font-headline text-2xl font-extrabold text-primary mb-4">For Students</h4>
+<p class="text-secondary mb-6 text-sm leading-relaxed font-medium opacity-90">The ultimate research companion. Access case summaries, interactive legal theories, and automated citation tools for your academic journey.</p>
+<ul class="flex flex-col gap-3 mb-8">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant font-medium"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span>Summaries of landmark judgments</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant font-medium"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span>Interactive moot court prep</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant font-medium"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span>Fast legal citation search</li>
+</ul>
+<button class="text-primary font-bold flex items-center gap-3 group-hover:gap-5 transition-all text-sm">
+                            Learn more 
+                            <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<!-- Lawyers -->
+<div class="group bg-surface-container-low rounded-[2rem] overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] border border-outline-variant/30">
+<div class="h-60 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="confident Indian lawyer in a professional suit standing in a modern glass office overlooking a bustling Indian city skyline" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxQPRAO9ga-x4fTWtdrI8fX2fGHnzB_7Zq-XvacaN4hYgA_Ma2lveQN6Rb-bRbtQ7APAhAyv1VNgWcv9wUOxV87r1WXwtbBcbolaiVnSbpcfigeRWB5LstpYhuC_cwJvO1mEDejEX85QnlM0JAXmIbokAzu3e0iuGD-w39YnyhVWOHZkNQabCB0nW3h64e0cC5MG7oezpRe5QiROokbdx2L5MSsDbcL7IlBjFvPGE-hKaL_xEtnTe4vzMeVgxckRM8Zp-f0E3W5fYt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="p-10">
+<h4 class="font-headline text-2xl font-extrabold text-primary mb-4">For Lawyers</h4>
+<p class="text-secondary mb-6 text-sm leading-relaxed font-medium opacity-90">Augment your practice with elite efficiency. Automate routine drafting, conduct deep research, and manage case intelligence seamlessly.</p>
+<ul class="flex flex-col gap-3 mb-8">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant font-medium"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span>Automated pleading drafting</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant font-medium"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span>Advanced precedent analysis</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant font-medium"><span class="material-symbols-outlined text-tertiary text-base">check_circle</span>Seamless case management</li>
+</ul>
+<button class="text-primary font-bold flex items-center gap-3 group-hover:gap-5 transition-all text-sm">
+                            Learn more 
+                            <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof / Trust -->
+<section class="py-24 px-6 border-y border-outline-variant/10 bg-surface-container-low/30">
+<div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
+<div class="lg:w-3/5">
+<h3 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-6 leading-[1.2] tracking-tight">Built with trust and cutting-edge technology for the Indian Legal System.</h3>
+<p class="text-secondary text-lg font-medium opacity-80 leading-relaxed">Our AI is trained on vetted legal datasets, ensuring compliance with Indian Bar Council guidelines and the latest digital data protection norms.</p>
+</div>
+<div class="lg:w-2/5 grid grid-cols-2 gap-10">
+<div class="flex flex-col items-center text-center gap-4 group">
+<div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-outline-variant/10 flex items-center justify-center text-primary group-hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-4xl">verified</span>
+</div>
+<span class="font-bold text-primary text-sm uppercase tracking-wider">Legal Compliance</span>
+</div>
+<div class="flex flex-col items-center text-center gap-4 group">
+<div class="w-16 h-16 rounded-2xl bg-white shadow-sm border border-outline-variant/10 flex items-center justify-center text-primary group-hover:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-4xl">shield_person</span>
+</div>
+<span class="font-bold text-primary text-sm uppercase tracking-wider">Privacy First</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 px-6 relative overflow-hidden">
+<div class="max-w-5xl mx-auto premium-cta rounded-[3rem] p-12 md:p-24 text-center text-on-primary relative z-10 overflow-hidden shadow-[0_48px_100px_-20px_rgba(3,22,54,0.4)]">
+<!-- Decorative accents -->
+<div class="absolute -top-32 -left-32 w-80 h-80 bg-tertiary/20 rounded-full blur-[100px]"></div>
+<div class="absolute -bottom-32 -right-32 w-80 h-80 bg-white/10 rounded-full blur-[100px]"></div>
+<h2 class="font-headline text-4xl md:text-6xl font-black mb-8 tracking-tighter">Secure Your Early Access</h2>
+<p class="text-on-primary-container text-lg md:text-xl mb-12 max-w-2xl mx-auto font-medium opacity-90 leading-relaxed">Be among the first to experience the transformation of Indian law. Our early-access slots are limited to ensure quality support.</p>
+<div id="bottom-form" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto bg-white/10 p-2 rounded-3xl backdrop-blur-2xl border border-white/20 shadow-2xl">
+<input id="bottom-email" class="flex-grow bg-transparent border-none text-white placeholder:text-white/60 focus:ring-0 px-6 font-medium" placeholder="Your professional email" type="email"/>
+<button onclick="submitBottom()" class="bg-tertiary text-on-tertiary px-10 py-4 rounded-2xl font-black hover:bg-tertiary/90 hover:scale-[1.02] active:scale-95 transition-all text-base shadow-lg">Get Early Access</button>
+</div>
+<div id="bottom-success" class="hidden">
+<p class="text-tertiary-fixed font-headline font-bold text-2xl">🎉 You're on the waitlist!</p>
+<p class="text-on-primary-container/70 text-sm mt-2 font-medium">We'll notify you first when Judy launches.</p>
+</div>
+<p class="mt-10 text-xs font-bold tracking-[0.2em] uppercase text-on-primary-container/60">Invite-only beta starting Q3 2024</p>
+</div>
+<!-- Background Decor -->
+<div class="absolute inset-0 bg-surface-container-low/50 -z-10 h-3/4 bottom-0"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-12 px-6 border-t border-outline-variant/20 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+<div class="max-w-sm">
+<div class="font-headline text-2xl font-black text-primary mb-6"><img src="./assets/logo.png" alt="Judy.AI" class="h-14 w-auto"/></div>
+<p class="font-body text-sm text-secondary leading-relaxed font-medium">Empowering Indian legal intelligence with advanced AI. Building the bridge between traditional law and modern technology.</p>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="flex flex-col gap-4">
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline">Legal</span>
+<a class="text-secondary hover:text-primary transition-all text-sm font-semibold" href="#">Privacy Policy</a>
+<a class="text-secondary hover:text-primary transition-all text-sm font-semibold" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline">Company</span>
+<a class="text-secondary hover:text-primary transition-all text-sm font-semibold" href="#">About Us</a>
+<a class="text-secondary hover:text-primary transition-all text-sm font-semibold" href="#">Contact Support</a>
+</div>
+</div>
+</div>
+<div class="pt-12 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-8">
+<p class="text-[13px] text-outline font-medium">© 2025 Judy.AI. Indian Legal Intelligence. All rights reserved.</p>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">account_balance</span>
+</a>
+<a class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-xl">school</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<style>
+    @keyframes progress {
+        0% { transform: translateX(-100%); }
+        50% { transform: translateX(0%); }
+        100% { transform: translateX(100%); }
+    }
+</style>
+<script>
+  function submitHero() {
+    var email = document.getElementById('hero-email').value.trim();
+    if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return; }
+    // Sprint 3: Supabase integration goes here
+    console.log('Waitlist signup:', email);
+    document.getElementById('hero-form').classList.add('hidden');
+    document.getElementById('hero-success').classList.remove('hidden');
+  }
+  function submitBottom() {
+    var email = document.getElementById('bottom-email').value.trim();
+    if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return; }
+    // Sprint 3: Supabase integration goes here
+    console.log('Waitlist signup:', email);
+    document.getElementById('bottom-form').classList.add('hidden');
+    document.getElementById('bottom-success').classList.remove('hidden');
+  }
+</script>
+</body></html>
