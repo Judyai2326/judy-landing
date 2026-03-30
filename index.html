@@ -114,7 +114,7 @@
                     Empowering the Indian Legal Journey with AI.
                 </h1>
 <p class="text-lg md:text-xl text-secondary leading-relaxed mb-10 max-w-xl font-medium opacity-90">
-                    A sophisticated digital concierge for citizens seeking justice, students mastering the law, and practitioners demanding efficiency. Available in English and 12 + Indian regional languages.
+                    A sophisticated digital concierge for citizens seeking justice, students mastering the law, and practitioners demanding efficiency. Available in English and 12 Indian regional languages.
                 </p>
 <div id="hero-form" class="flex flex-col sm:flex-row gap-4 max-w-lg">
 <div class="flex-grow relative">
@@ -142,7 +142,7 @@
 <span class="material-symbols-outlined text-2xl" data-weight="fill">gavel</span>
 </div>
 <div>
-<h4 class="font-headline font-extrabold text-primary text-xl mb-1">Judy.AI Engine</h4>
+<h4 class="font-headline font-extrabold text-primary text-xl mb-1">Judy.ai Engine</h4>
 <p class="text-sm text-on-surface-variant font-medium">Analyzing 50,000+ Supreme Court precedents in real-time...</p>
 <div class="mt-4 w-full bg-primary/10 h-1.5 rounded-full overflow-hidden">
 <div class="bg-tertiary h-full w-[70%] rounded-full animate-[progress_3s_ease-in-out_infinite]"></div>
@@ -359,7 +359,7 @@
 </div>
 </div>
 <div class="pt-12 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-8">
-<p class="text-[13px] text-outline font-medium">© 2026 Judy.AI. Indian Legal Intelligence. All rights reserved.</p>
+<p class="text-[13px] text-outline font-medium">© 2026 Judy.AI. Your Legal Companion. All rights reserved.</p>
 <div class="flex gap-4">
 <a class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
 <span class="material-symbols-outlined text-xl">share</span>
@@ -382,19 +382,40 @@
     }
 </style>
 <script>
-  function submitHero() {
+  // ── SPRINT 3: Supabase Config ──────────────────────────────
+  // Replace these two values with your actual Supabase credentials
+  var SUPABASE_URL = 'https://notzvvzcparskgiobjkv.supabase.co';
+  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5vdHp2dnpjcGFyc2tnaW9iamt2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ4NTg4NTksImV4cCI6MjA5MDQzNDg1OX0.R-nLou_Lut0KgPh8EvkIM0-E_dfV56AqonpZVpjBjiw';
+
+  async function saveToSupabase(email) {
+    var response = await fetch(SUPABASE_URL + '/rest/v1/waitlist', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify({ email: email })
+    });
+    if (!response.ok) throw new Error('Supabase error: ' + response.status);
+  }
+
+  async function submitHero() {
     var email = document.getElementById('hero-email').value.trim();
     if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return; }
-    // Sprint 3: Supabase integration goes here
-    console.log('Waitlist signup:', email);
+    try {
+      await saveToSupabase(email);
+    } catch(e) { alert('Something went wrong. Please try again.'); return; }
     document.getElementById('hero-form').classList.add('hidden');
     document.getElementById('hero-success').classList.remove('hidden');
   }
-  function submitBottom() {
+  async function submitBottom() {
     var email = document.getElementById('bottom-email').value.trim();
     if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return; }
-    // Sprint 3: Supabase integration goes here
-    console.log('Waitlist signup:', email);
+    try {
+      await saveToSupabase(email);
+    } catch(e) { alert('Something went wrong. Please try again.'); return; }
     document.getElementById('bottom-form').classList.add('hidden');
     document.getElementById('bottom-success').classList.remove('hidden');
   }
