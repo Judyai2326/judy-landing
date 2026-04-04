@@ -97,9 +97,9 @@
 </head>
 <body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
 <header class="fixed top-0 w-full z-50 glass-header">
-<nav class="flex justify-between items-center px-8 py-2 max-w-7xl mx-auto w-full">
+<nav class="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto w-full">
 <div class="flex items-center gap-3">
-  <img src="./assets/logo.png" alt="Judy.AI" style="height: 60px; width: auto;"/>
+  <img src="./assets/logo.png" alt="Judy.AI" class="h-16 w-auto"/>
   </div>
 <div class="flex items-center gap-6">
 <button class="signature-gradient text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm transition-transform active:scale-95">
@@ -110,17 +110,17 @@
 </header>
 <main class="pt-24">
 <!-- Hero Section -->
-<section class="relative min-h-[921px] flex items-center overflow-hidden px-8">
+<section class="relative min-h-screen md:min-h-[921px] flex items-center overflow-hidden px-4 md:px-8 py-24 md:py-0">
 <div class="absolute inset-0 z-0">
 <div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-10"></div>
 <img alt="Cinematic shot of a modern legal gavel on a dark marble surface with soft volumetric emerald light and floating digital data particles" class="w-full h-full object-cover object-right opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMrB6u6zO0JE4azeQ3AxBcCF8eIJ7YvrMrvat4WPXq600RN9lt17WQfh-el-GlDDpeokh9qKBLZofd9arcM0ybL2b_GYOE1YMrPthtDb8DOQoxCZt2AlOFl13HGlDFPPKXzCCzfHrWNOjtE-1csKd-ty5nQ4hcnB-WNuuc-I0MdtdEHmPs5dI7yaEZkOMplOj2ot-wGdpZB89OJq9mgGI-HkhmnceAssYoq3UxZ5oNnvqfWWF_az6BFL_8MwkSQHVDtfE2Blx82Zrg"/>
 </div>
 <div class="relative z-20 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 <div class="space-y-8">
-<h1 class="text-[68px] md:text-[74px] font-headline font-bold leading-[1.1] tracking-tight">
+<h1 class="text-[38px] md:text-[68px] lg:text-[74px] font-headline font-bold leading-[1.1] tracking-tight">
                     Empowering the Indian Legal Journey with AI.
                 </h1>
-<p class="text-[22px] text-on-surface-variant max-w-lg leading-relaxed font-body">
+<p class="text-base md:text-[22px] text-on-surface-variant max-w-lg leading-relaxed font-body">
                     A sophisticated digital concierge for citizens seeking justice, students mastering the law, and practitioners demanding efficiency. Available in English and 12+ Indian regional languages.
                 </p>
 <div class="flex flex-col sm:flex-row gap-3 max-w-md">
@@ -141,7 +141,7 @@
 </div>
 </section>
 <!-- Core Capabilities (Bento Grid) -->
-<section class="py-32 px-8 bg-surface-container-low">
+<section class="py-16 md:py-32 px-4 md:px-8 bg-surface-container-low">
 <div class="max-w-7xl mx-auto">
 <div class="mb-20">
 <span class="text-primary font-bold tracking-widest text-[10px] uppercase mb-4 block font-label">Core Capabilities</span>
@@ -150,7 +150,7 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
 <!-- Feature 1: Multilingual -->
-<div class="md:col-span-4 bg-surface-container p-10 rounded-3xl flex flex-col md:flex-row gap-10 items-center transition-all hover:bg-surface-container-high">
+<div class="md:col-span-4 bg-surface-container p-6 md:p-10 rounded-3xl flex flex-col md:flex-row gap-10 items-center transition-all hover:bg-surface-container-high">
 <div class="flex-1">
 <div class="inline-flex p-3 rounded-2xl bg-primary-container text-on-primary-container mb-6">
 <span class="material-symbols-outlined text-3xl">translate</span>
@@ -173,7 +173,7 @@
 </div>
 </div>
 <!-- Feature 2: Research -->
-<div class="md:col-span-2 bg-primary-container p-10 rounded-3xl text-on-primary-container flex flex-col justify-between relative overflow-hidden group">
+<div class="md:col-span-2 bg-primary-container p-6 md:p-10 rounded-3xl text-on-primary-container flex flex-col justify-between relative overflow-hidden group">
 <div class="relative z-10">
 <div class="bg-on-primary-container/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-8">
 <span class="material-symbols-outlined text-3xl text-primary-fixed">search_insights</span>
@@ -187,17 +187,17 @@
 </div>
 </div>
 <!-- Bottom Row Features -->
-<div class="md:col-span-2 bg-surface-container p-10 rounded-3xl transition-all hover:bg-surface-container-high group">
+<div class="md:col-span-2 bg-surface-container p-6 md:p-10 rounded-3xl transition-all hover:bg-surface-container-high group">
 <span class="material-symbols-outlined text-4xl text-primary mb-6 transition-transform group-hover:scale-110">description</span>
 <h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Smart Document Drafting</h3>
 <p class="text-on-surface-variant font-body leading-relaxed">AI-powered templates for notices, contracts, and petitions, customized for Indian statutory requirements.</p>
 </div>
-<div class="md:col-span-2 bg-surface-container p-10 rounded-3xl transition-all hover:bg-surface-container-high group">
+<div class="md:col-span-2 bg-surface-container p-6 md:p-10 rounded-3xl transition-all hover:bg-surface-container-high group">
 <span class="material-symbols-outlined text-4xl text-primary mb-6 transition-transform group-hover:scale-110">gavel</span>
 <h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Simple Citizens Rights Guide</h3>
 <p class="text-on-surface-variant font-body leading-relaxed">Plain-language explanations of your fundamental rights and legal procedures. Empowerment through understanding.</p>
 </div>
-<div class="md:col-span-2 bg-surface-container p-10 rounded-3xl transition-all hover:bg-surface-container-high group">
+<div class="md:col-span-2 bg-surface-container p-6 md:p-10 rounded-3xl transition-all hover:bg-surface-container-high group">
 <span class="material-symbols-outlined text-4xl text-primary mb-6 transition-transform group-hover:scale-110">shield</span>
 <h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Secured Intelligence</h3>
 <p class="text-on-surface-variant font-body leading-relaxed">Bank-grade encryption for all legal queries and document storage. Your privacy is our prime directive.</p>
@@ -206,7 +206,7 @@
 </div>
 </section>
 <!-- Tailored for the Ecosystem -->
-<section class="py-32 px-8 bg-background">
+<section class="py-16 md:py-32 px-4 md:px-8 bg-background">
 <div class="max-w-7xl mx-auto">
 <div class="text-center mb-20">
 <span class="text-primary font-bold tracking-widest text-[10px] uppercase mb-4 block font-label">Target Solutions</span>
@@ -219,7 +219,7 @@
 <div class="h-60 overflow-hidden relative">
 <img alt="diverse group of Indian people" class="w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjVnMCYg65I9_a8_BvVkI3wfL8NXqnOLPeJVQQkq05YAZIVAYwC591ibzfQ5QMRZjx5dxalYr8oLOj9avEt-KB2L-YhmmQEkIDLYfwUzmKwmJLba55x0M1g8a7wrdvteg-wCu-B0zf3GShNTwSxiYoY8M0mwwqcesp2jMZmhUAoVMrJRWDpC5DJS72PFfix9uQMU46d-jtZl2OyMX0kfTKcwAfRxXAD7t1Vq9sm-6WmJXs4OsuiqBHWc0hcWEtCpqPlFoIrE35w0CF"/>
 </div>
-<div class="p-10">
+<div class="p-6 md:p-10">
 <h4 class="text-2xl font-headline font-bold text-on-surface mb-4">For Citizens</h4>
 <p class="text-on-surface-variant mb-6 text-sm leading-relaxed font-body">Navigate the complexity of everyday law. Understand your rights, verify documents, and find the right legal path without the confusion.</p>
 <ul class="space-y-3 mb-8">
@@ -243,7 +243,7 @@
 <div class="h-60 overflow-hidden relative">
 <img alt="focused law student in library" class="w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5JocWPH1Z9vrw_1-mlfDhu8_5W_NaqUD6fyZenwdm5g9xqMNaxjNJR9ut-gIrvNLXCYmxlhxfoDR-syA0cIy0FgdLGKhDfKn75W7HWbFx98gI2rONHa4ST_IXi5sJkVwheHZ9zHUdqebr1SOcyuUXZbel3vT5mv4RrU9KWQZtGTi5903rnomlxVeQGpznZ7Fu_Cg001331isGcLcfVDqJybRVP7fJ4-x8aPpRjKKf-p5F5dN81wDa1UzZ4Vm2YqSs-c86y2y1bT4-"/>
 </div>
-<div class="p-10">
+<div class="p-6 md:p-10">
 <h4 class="text-2xl font-headline font-bold text-on-surface mb-4">For Students</h4>
 <p class="text-on-surface-variant mb-6 text-sm leading-relaxed font-body">The ultimate research companion. Access case summaries, interactive legal theories, and automated citation tools for your academic journey.</p>
 <ul class="space-y-3 mb-8">
@@ -267,7 +267,7 @@
 <div class="h-60 overflow-hidden relative">
 <img alt="professional lawyer in modern office" class="w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxQPRAO9ga-x4fTWtdrI8fX2fGHnzB_7Zq-XvacaN4hYgA_Ma2lveQN6Rb-bRbtQ7APAhAyv1VNgWcv9wUOxV87r1WXwtbBcbolaiVnSbpcfigeRWB5LstpYhuC_cwJvO1mEDejEX85QnlM0JAXmIbokAzu3e0iuGD-w39YnyhVWOHZkNQabCB0nW3h64e0cC5MG7oezpRe5QiROokbdx2L5MSsDbcL7IlBjFvPGE-hKaL_xEtnTe4vzMeVgxckRM8Zp-f0E3W5fYt"/>
 </div>
-<div class="p-10">
+<div class="p-6 md:p-10">
 <h4 class="text-2xl font-headline font-bold text-on-surface mb-4">For Lawyers</h4>
 <p class="text-on-surface-variant mb-6 text-sm leading-relaxed font-body">Augment your practice with elite efficiency. Automate routine drafting, conduct deep research, and manage case intelligence seamlessly.</p>
 <ul class="space-y-3 mb-8">
@@ -290,7 +290,7 @@
 </div>
 </section>
 <!-- Trust Section -->
-<section class="py-24 px-8 bg-surface-container-low">
+<section class="py-12 md:py-24 px-4 md:px-8 bg-surface-container-low">
 <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
 <div class="lg:w-3/5">
 <h3 class="text-3xl md:text-4xl font-headline font-bold text-on-surface mb-6 leading-[1.2] tracking-tight">Built with trust and cutting-edge technology for the Indian Legal System.</h3>
@@ -313,13 +313,13 @@
 </div>
 </section>
 <!-- Final CTA Section -->
-<section class="py-32 px-8 relative overflow-hidden">
+<section class="py-16 md:py-32 px-4 md:px-8 relative overflow-hidden">
 <div class="max-w-5xl mx-auto bg-surface-container-highest rounded-[3rem] p-12 md:p-24 text-center relative z-10 overflow-hidden">
 <div class="absolute -top-32 -left-32 w-80 h-80 signature-gradient opacity-10 rounded-full blur-[100px]"></div>
 <div class="absolute -bottom-32 -right-32 w-80 h-80 bg-primary/10 rounded-full blur-[100px]"></div>
 <h2 class="text-4xl md:text-6xl font-headline font-bold mb-8 tracking-tighter text-on-surface">Secure Your Early Access</h2>
 <p class="text-on-surface-variant text-lg md:text-xl mb-12 max-w-2xl mx-auto font-body leading-relaxed">Be among the first to experience the transformation of Indian law. Our early-access slots are limited to ensure quality support.</p>
-<div id="bottom-form" class="flex flex-col sm:row gap-4 max-w-xl mx-auto bg-surface-container p-2 rounded-3xl backdrop-blur-2xl">
+<div id="bottom-form" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto bg-surface-container p-2 rounded-3xl backdrop-blur-2xl">
 <input id="bottom-email" class="flex-grow bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/60 focus:ring-0 px-6 font-medium" placeholder="Your professional email" type="email"/>
 <button onclick="submitBottom()" class="signature-gradient text-on-primary px-10 py-4 rounded-2xl font-bold hover:scale-[1.02] active:scale-95 transition-all text-base shadow-lg">Get Early Access</button>
 </div>
@@ -332,7 +332,7 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-background py-12 px-12 border-t border-surface-container-highest">
+<footer class="bg-background py-12 px-4 md:px-12 border-t border-surface-container-highest">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
 <div class="font-label text-xs uppercase tracking-widest text-on-surface-variant/60 order-2 md:order-1">© 2026 Judy.ai. All rights reserved.</div>
 <div class="flex gap-8 order-1 md:order-2">
